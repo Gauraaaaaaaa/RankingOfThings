@@ -3,7 +3,7 @@
 	"id": "ranking_of_things",
 	"version": "${version}",
 	"name": "Ranking Of Things",
-	"description": "Rank your items with rarity !",
+	"description": "Rank your items by rarity !",
 	"authors": [
 		"Gaura"
 	],
