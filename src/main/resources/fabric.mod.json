@@ -8,9 +8,9 @@
 		"Gaura"
 	],
 	"contact": {
-		"homepage": "",
-		"sources": "",
-		"issues": ""
+		"homepage": "https://modrinth.com/mod/ranking-of-things",
+		"sources": "https://github.com/Gauraaaaaaaa/RankingOfThings",
+		"issues": "https://github.com/Gauraaaaaaaa/RankingOfThings/issues"
 	},
 	"license": "MIT",
 	"icon": "assets/ranking_of_things/icon.png",
