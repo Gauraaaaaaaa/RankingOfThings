@@ -26,7 +26,7 @@ public class RankingOfThingsConfig implements ConfigData {
     public FormattingColorName uncommon_color = FormattingColorName.GREEN;
 
     @ConfigEntry.Category("uncommon")
-    public List<String> uncommon_list = List.of("minecraft:potion", "minecraft:splash_potion", "minecraft:lingering_potion",
+    public String[] uncommon_list = {"minecraft:potion", "minecraft:splash_potion", "minecraft:lingering_potion",
             "minecraft:tipped_arrow", "minecraft:iron_ingot", "minecraft:raw_iron", "minecraft:iron_sword", "minecraft:iron_axe",
             "minecraft:iron_pickaxe", "minecraft:iron_shovel", "minecraft:iron_hoe", "minecraft:iron_nugget", "minecraft:iron_helmet",
             "minecraft:iron_chestplate", "minecraft:iron_leggings", "minecraft:iron_boots", "minecraft:iron_ore", "minecraft:deepslate_iron_ore",
@@ -41,7 +41,7 @@ public class RankingOfThingsConfig implements ConfigData {
             "minecraft:ender_pearl", "minecraft:blaze_rod", "minecraft:blaze_powder", "minecraft:magma_cream", "minecraft:slime_ball", "minecraft:slime_block",
             "minecraft:flower_banner_pattern", "minecraft:brewing_stand", "minecraft:fermented_spider_eye", "minecraft:lapis_block", "minecraft:lapis_lazuli",
             "minecraft:lapis_ore", "minecraft:deepslate_lapis_ore", "minecraft:poisonous_potato", "minecraft:rabbit_hide", "minecraft:turtle_egg",
-            "minecraft:scute");
+            "minecraft:scute"};
 
 
     @ConfigEntry.Category("rare")
@@ -50,7 +50,7 @@ public class RankingOfThingsConfig implements ConfigData {
     public FormattingColorName rare_color = FormattingColorName.AQUA;
 
     @ConfigEntry.Category("rare")
-    public List<String> rare_list = List.of("minecraft:spectral_arrow", "minecraft:diamond", "minecraft:diamond_sword", "minecraft:diamond_axe",
+    public String[] rare_list = {"minecraft:spectral_arrow", "minecraft:diamond", "minecraft:diamond_sword", "minecraft:diamond_axe",
             "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate",
             "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:diamond_ore", "minecraft:deepslate_diamond_ore", "minecraft:diamond_block",
             "minecraft:diamond_horse_armor", "minecraft:enchanted_book", "minecraft:enchanting_table", "minecraft:turtle_helmet", "minecraft:trident",
@@ -68,7 +68,7 @@ public class RankingOfThingsConfig implements ConfigData {
             "minecraft:explorer_pottery_sherd", "minecraft:friend_pottery_sherd", "minecraft:heart_pottery_sherd", "minecraft:heartbreak_pottery_sherd",
             "minecraft:howl_pottery_sherd", "minecraft:miner_pottery_sherd", "minecraft:mourner_pottery_sherd", "minecraft:plenty_pottery_sherd",
             "minecraft:prize_pottery_sherd", "minecraft:sheaf_pottery_sherd", "minecraft:shelter_pottery_sherd", "minecraft:skull_pottery_sherd",
-            "minecraft:snort_pottery_sherd", "minecraft:decorated_pot", "minecraft:sniffer_egg");
+            "minecraft:snort_pottery_sherd", "minecraft:sniffer_egg"};
 
 
     @ConfigEntry.Category("epic")
@@ -77,14 +77,14 @@ public class RankingOfThingsConfig implements ConfigData {
     public FormattingColorName epic_color = FormattingColorName.LIGHT_PURPLE;
 
     @ConfigEntry.Category("epic")
-    public List<String> epic_list = List.of("minecraft:netherite_ingot", "minecraft:netherite_sword", "minecraft:netherite_axe",
+    public String[] epic_list = {"minecraft:netherite_ingot", "minecraft:netherite_sword", "minecraft:netherite_axe",
             "minecraft:netherite_pickaxe", "minecraft:netherite_shovel", "minecraft:netherite_hoe", "minecraft:netherite_helmet",
             "minecraft:netherite_chestplate", "minecraft:netherite_leggings", "minecraft:netherite_boots", "minecraft:ancient_debris",
             "minecraft:netherite_scrap", "minecraft:netherite_upgrade_smithing_template", "minecraft:elytra", "minecraft:heart_of_the_sea",
             "minecraft:creeper_head", "minecraft:dragon_head", "minecraft:piglin_head", "minecraft:player_head", "minecraft:zombie_head",
             "minecraft:skeleton_skull", "minecraft:wither_skeleton_skull", "minecraft:wither_rose", "minecraft:experience_bottle",
             "minecraft:end_crystal", "minecraft:creeper_banner_pattern", "minecraft:piglin_banner_pattern", "minecraft:globe_banner_pattern",
-            "minecraft:skull_banner_pattern", "minecraft:dragon_breath");
+            "minecraft:skull_banner_pattern", "minecraft:dragon_breath"};
 
 
     @ConfigEntry.Category("legendary")
@@ -93,13 +93,13 @@ public class RankingOfThingsConfig implements ConfigData {
     public FormattingColorName legendary_color = FormattingColorName.YELLOW;
 
     @ConfigEntry.Category("legendary")
-    public List<String> legendary_list = List.of("minecraft:enchanted_golden_apple", "minecraft:sentry_armor_trim_smithing_template",
+    public String[] legendary_list = {"minecraft:enchanted_golden_apple", "minecraft:sentry_armor_trim_smithing_template",
             "minecraft:shaper_armor_trim_smithing_template", "minecraft:silence_armor_trim_smithing_template", "minecraft:snout_armor_trim_smithing_template",
             "minecraft:spire_armor_trim_smithing_template", "minecraft:coast_armor_trim_smithing_template", "minecraft:eye_armor_trim_smithing_template",
             "minecraft:dune_armor_trim_smithing_template", "minecraft:host_armor_trim_smithing_template", "minecraft:raiser_armor_trim_smithing_template",
             "minecraft:rib_armor_trim_smithing_template", "minecraft:tide_armor_trim_smithing_template", "minecraft:vex_armor_trim_smithing_template",
             "minecraft:ward_armor_trim_smithing_template", "minecraft:wayfinder_armor_trim_smithing_template", "minecraft:wild_armor_trim_smithing_template",
-            "minecraft:dragon_egg", "minecraft:nether_star", "minecraft:totem_of_undying", "minecraft:conduit", "minecraft:beacon", "minecraft:mojang_banner_pattern");
+            "minecraft:dragon_egg", "minecraft:nether_star", "minecraft:totem_of_undying", "minecraft:conduit", "minecraft:beacon", "minecraft:mojang_banner_pattern"};
 
 
     @ConfigEntry.Category("mythic")
@@ -108,5 +108,5 @@ public class RankingOfThingsConfig implements ConfigData {
     public FormattingColorName mythic_color = FormattingColorName.GOLD;
 
     @ConfigEntry.Category("mythic")
-    public List<String> mythic_list = List.of();
+    public String[] mythic_list = {};
 }

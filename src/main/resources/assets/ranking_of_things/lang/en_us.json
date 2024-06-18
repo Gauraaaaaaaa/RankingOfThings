@@ -1,27 +1,27 @@
 {
   "text.autoconfig.ranking_of_things.title": "Ranking Of Things",
 
-  "text.autoconfig.ranking_of_things.category.common": "COMMON",
+  "text.autoconfig.ranking_of_things.category.common": "Common",
   "text.autoconfig.ranking_of_things.option.common_color": "Common Color",
   "text.autoconfig.ranking_of_things.option.enchantment_rarity": "Enchantment Rarity",
 
-  "text.autoconfig.ranking_of_things.category.uncommon": "UNCOMMON",
+  "text.autoconfig.ranking_of_things.category.uncommon": "Uncommon",
   "text.autoconfig.ranking_of_things.option.uncommon_color": "Uncommon Color",
   "text.autoconfig.ranking_of_things.option.uncommon_list": "Uncommon List",
 
-  "text.autoconfig.ranking_of_things.category.rare": "RARE",
+  "text.autoconfig.ranking_of_things.category.rare": "Rare",
   "text.autoconfig.ranking_of_things.option.rare_color": "Rare Color",
   "text.autoconfig.ranking_of_things.option.rare_list": "Rare List",
 
-  "text.autoconfig.ranking_of_things.category.epic": "EPIC",
+  "text.autoconfig.ranking_of_things.category.epic": "Epic",
   "text.autoconfig.ranking_of_things.option.epic_color": "Epic Color",
   "text.autoconfig.ranking_of_things.option.epic_list": "Epic List",
 
-  "text.autoconfig.ranking_of_things.category.legendary": "LEGENDARY",
+  "text.autoconfig.ranking_of_things.category.legendary": "Legendary",
   "text.autoconfig.ranking_of_things.option.legendary_color": "Legendary Color",
   "text.autoconfig.ranking_of_things.option.legendary_list": "Legendary List",
 
-  "text.autoconfig.ranking_of_things.category.mythic": "MYTHIC",
+  "text.autoconfig.ranking_of_things.category.mythic": "Mythic",
   "text.autoconfig.ranking_of_things.option.mythic_color": "Mythic Color",
   "text.autoconfig.ranking_of_things.option.mythic_list": "Mythic List"
 }

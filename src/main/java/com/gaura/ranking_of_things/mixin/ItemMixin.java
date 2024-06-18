@@ -47,15 +47,13 @@ public class ItemMixin {
         }
     }
 
-    private boolean isItemInList(ItemStack stack, @NotNull List<String> list) {
+    private boolean isItemInList(ItemStack stack, String[] list) {
 
         for (String string : list) {
 
             if (!string.isEmpty()) {
 
-                String[] split = string.split(":");
-
-                if (stack.getItem() == Registries.ITEM.get(new Identifier(split[0], split[1]))) {
+                if (stack.getItem() == Registries.ITEM.get(new Identifier(string))) {
 
                     return true;
                 }
