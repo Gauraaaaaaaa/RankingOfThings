@@ -5,8 +5,6 @@ import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
-import java.util.List;
-
 @Config(name = "ranking_of_things")
 @Config.Gui.Background("minecraft:textures/block/light_gray_wool.png")
 public class RankingOfThingsConfig implements ConfigData {
@@ -41,7 +39,7 @@ public class RankingOfThingsConfig implements ConfigData {
             "minecraft:ender_pearl", "minecraft:blaze_rod", "minecraft:blaze_powder", "minecraft:magma_cream", "minecraft:slime_ball", "minecraft:slime_block",
             "minecraft:flower_banner_pattern", "minecraft:brewing_stand", "minecraft:fermented_spider_eye", "minecraft:lapis_block", "minecraft:lapis_lazuli",
             "minecraft:lapis_ore", "minecraft:deepslate_lapis_ore", "minecraft:poisonous_potato", "minecraft:rabbit_hide", "minecraft:turtle_egg",
-            "minecraft:scute"};
+            "minecraft:turtle_scute", "minecraft:wolf_armor", "minecraft:armadillo_scute", "minecraft:breeze_rod"};
 
 
     @ConfigEntry.Category("rare")
@@ -61,14 +59,15 @@ public class RankingOfThingsConfig implements ConfigData {
             "minecraft:music_disc_13", "minecraft:music_disc_cat", "minecraft:music_disc_blocks", "minecraft:music_disc_chirp", "minecraft:music_disc_far",
             "minecraft:music_disc_mall", "minecraft:music_disc_mellohi", "minecraft:music_disc_stal", "minecraft:music_disc_strad", "minecraft:music_disc_ward",
             "minecraft:music_disc_11", "minecraft:music_disc_wait", "minecraft:music_disc_otherside", "minecraft:music_disc_relic", "minecraft:music_disc_5",
-            "minecraft:music_disc_pigstep", "minecraft:disc_fragment_5", "minecraft:phantom_membrane", "minecraft:glow_ink_sac", "minecraft:emerald",
-            "minecraft:emerald_block", "minecraft:emerald_ore", "minecraft:deepslate_emerald_ore", "minecraft:shulker_shell", "minecraft:shulker_box",
-            "minecraft:rabbit_foot", "minecraft:angler_pottery_sherd", "minecraft:archer_pottery_sherd", "minecraft:arms_up_pottery_sherd",
-            "minecraft:blade_pottery_sherd", "minecraft:brewer_pottery_sherd", "minecraft:burn_pottery_sherd", "minecraft:danger_pottery_sherd",
-            "minecraft:explorer_pottery_sherd", "minecraft:friend_pottery_sherd", "minecraft:heart_pottery_sherd", "minecraft:heartbreak_pottery_sherd",
-            "minecraft:howl_pottery_sherd", "minecraft:miner_pottery_sherd", "minecraft:mourner_pottery_sherd", "minecraft:plenty_pottery_sherd",
-            "minecraft:prize_pottery_sherd", "minecraft:sheaf_pottery_sherd", "minecraft:shelter_pottery_sherd", "minecraft:skull_pottery_sherd",
-            "minecraft:snort_pottery_sherd", "minecraft:sniffer_egg"};
+            "minecraft:music_disc_pigstep", "minecraft:music_disc_creator_music_box", "minecraft:music_disc_creator", "minecraft:music_disc_precipice",
+            "minecraft:disc_fragment_5", "minecraft:phantom_membrane", "minecraft:glow_ink_sac", "minecraft:emerald", "minecraft:emerald_block",
+            "minecraft:emerald_ore", "minecraft:deepslate_emerald_ore", "minecraft:shulker_shell", "minecraft:shulker_box", "minecraft:rabbit_foot",
+            "minecraft:angler_pottery_sherd", "minecraft:archer_pottery_sherd", "minecraft:arms_up_pottery_sherd", "minecraft:blade_pottery_sherd",
+            "minecraft:brewer_pottery_sherd", "minecraft:burn_pottery_sherd", "minecraft:danger_pottery_sherd", "minecraft:explorer_pottery_sherd",
+            "minecraft:friend_pottery_sherd", "minecraft:heart_pottery_sherd", "minecraft:heartbreak_pottery_sherd", "minecraft:howl_pottery_sherd",
+            "minecraft:miner_pottery_sherd", "minecraft:mourner_pottery_sherd", "minecraft:plenty_pottery_sherd", "minecraft:prize_pottery_sherd",
+            "minecraft:sheaf_pottery_sherd", "minecraft:shelter_pottery_sherd", "minecraft:skull_pottery_sherd", "minecraft:snort_pottery_sherd",
+            "minecraft:sniffer_egg", "minecraft:ominous_bottle", "minecraft:ominous_banner", "minecraft:wind_charge", "minecraft:trial_key", "minecraft:heavy_core"};
 
 
     @ConfigEntry.Category("epic")
@@ -84,7 +83,7 @@ public class RankingOfThingsConfig implements ConfigData {
             "minecraft:creeper_head", "minecraft:dragon_head", "minecraft:piglin_head", "minecraft:player_head", "minecraft:zombie_head",
             "minecraft:skeleton_skull", "minecraft:wither_skeleton_skull", "minecraft:wither_rose", "minecraft:experience_bottle",
             "minecraft:end_crystal", "minecraft:creeper_banner_pattern", "minecraft:piglin_banner_pattern", "minecraft:globe_banner_pattern",
-            "minecraft:skull_banner_pattern", "minecraft:dragon_breath"};
+            "minecraft:skull_banner_pattern", "minecraft:dragon_breath", "minecraft:ominous_trial_key", "minecraft:mace"};
 
 
     @ConfigEntry.Category("legendary")
@@ -99,7 +98,8 @@ public class RankingOfThingsConfig implements ConfigData {
             "minecraft:dune_armor_trim_smithing_template", "minecraft:host_armor_trim_smithing_template", "minecraft:raiser_armor_trim_smithing_template",
             "minecraft:rib_armor_trim_smithing_template", "minecraft:tide_armor_trim_smithing_template", "minecraft:vex_armor_trim_smithing_template",
             "minecraft:ward_armor_trim_smithing_template", "minecraft:wayfinder_armor_trim_smithing_template", "minecraft:wild_armor_trim_smithing_template",
-            "minecraft:dragon_egg", "minecraft:nether_star", "minecraft:totem_of_undying", "minecraft:conduit", "minecraft:beacon", "minecraft:mojang_banner_pattern"};
+            "minecraft:flow_armor_trim_smithing_template", "minecraft:bolt_armor_trim_smithing_template", "minecraft:dragon_egg", "minecraft:nether_star",
+            "minecraft:totem_of_undying", "minecraft:conduit", "minecraft:beacon", "minecraft:mojang_banner_pattern"};
 
 
     @ConfigEntry.Category("mythic")

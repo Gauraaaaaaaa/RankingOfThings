@@ -2,6 +2,8 @@ package com.gaura.ranking_of_things.mixin;
 
 import com.gaura.ranking_of_things.CustomRarity;
 import com.gaura.ranking_of_things.RankingOfThings;
+import net.minecraft.component.ComponentHolder;
+import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -9,17 +11,20 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.List;
 
-@Mixin(Item.class)
-public class ItemMixin {
+@Mixin(ItemStack.class)
+public class ItemStackMixin {
 
     @Inject(method = "getRarity", at = @At("RETURN"), cancellable = true)
-    public void changeRarity(ItemStack stack, CallbackInfoReturnable<Rarity> cir) {
+    public void changeRarity(CallbackInfoReturnable<Rarity> cir) {
+
+        ItemStack stack = (ItemStack) (Object) this;
 
         if (isItemInList(stack, RankingOfThings.CONFIG.uncommon_list)) {
 
@@ -47,13 +52,14 @@ public class ItemMixin {
         }
     }
 
+    @Unique
     private boolean isItemInList(ItemStack stack, String[] list) {
 
         for (String string : list) {
 
             if (!string.isEmpty()) {
 
-                if (stack.getItem() == Registries.ITEM.get(new Identifier(string))) {
+                if (stack.getItem() == Registries.ITEM.get(Identifier.of(string))) {
 
                     return true;
                 }
