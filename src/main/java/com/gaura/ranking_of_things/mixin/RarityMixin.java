@@ -8,10 +8,7 @@ import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Rarity;
 import org.objectweb.asm.Opcodes;
-import org.spongepowered.asm.mixin.Final;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Mutable;
-import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.gen.Invoker;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -51,26 +48,38 @@ public abstract class RarityMixin {
         var rarities = new ArrayList<>(Arrays.asList(field_8905));
         var last = rarities.get(rarities.size() - 1);
 
-        var common = newRarity("COMMON", last.ordinal() + 1, RankingOfThings.CONFIG.common_color.getFormatting());
-        var uncommon = newRarity("UNCOMMON", last.ordinal() + 2, RankingOfThings.CONFIG.uncommon_color.getFormatting());
-        var rare = newRarity("RARE", last.ordinal() + 3, RankingOfThings.CONFIG.rare_color.getFormatting());
-        var epic = newRarity("EPIC", last.ordinal() + 4, RankingOfThings.CONFIG.epic_color.getFormatting());
-        var legendary = newRarity("LEGENDARY", last.ordinal() + 5, RankingOfThings.CONFIG.legendary_color.getFormatting());
-        var mythic = newRarity("MYTHIC", last.ordinal() + 6, RankingOfThings.CONFIG.mythic_color.getFormatting());
+        var one = newRarity(RankingOfThings.CONFIG.one_name.toUpperCase(), last.ordinal() + 1, RankingOfThings.CONFIG.one_color.getFormatting());
+        var two = newRarity(RankingOfThings.CONFIG.two_name.toUpperCase(), last.ordinal() + 2, RankingOfThings.CONFIG.two_color.getFormatting());
+        var three = newRarity(RankingOfThings.CONFIG.three_name.toUpperCase(), last.ordinal() + 3, RankingOfThings.CONFIG.three_color.getFormatting());
+        var four = newRarity(RankingOfThings.CONFIG.four_name.toUpperCase(), last.ordinal() + 4, RankingOfThings.CONFIG.four_color.getFormatting());
+        var five = newRarity(RankingOfThings.CONFIG.five_name.toUpperCase(), last.ordinal() + 5, RankingOfThings.CONFIG.five_color.getFormatting());
+        var six = newRarity(RankingOfThings.CONFIG.six_name.toUpperCase(), last.ordinal() + 6, RankingOfThings.CONFIG.six_color.getFormatting());
+        var seven = newRarity(RankingOfThings.CONFIG.seven_name.toUpperCase(), last.ordinal() + 7, RankingOfThings.CONFIG.seven_color.getFormatting());
+        var eight = newRarity(RankingOfThings.CONFIG.eight_name.toUpperCase(), last.ordinal() + 8, RankingOfThings.CONFIG.eight_color.getFormatting());
+        var nine = newRarity(RankingOfThings.CONFIG.nine_name.toUpperCase(), last.ordinal() + 9, RankingOfThings.CONFIG.nine_color.getFormatting());
+        var ten = newRarity(RankingOfThings.CONFIG.ten_name.toUpperCase(), last.ordinal() + 10, RankingOfThings.CONFIG.ten_color.getFormatting());
 
-        CustomRarity.COMMON = common;
-        CustomRarity.UNCOMMON = uncommon;
-        CustomRarity.RARE = rare;
-        CustomRarity.EPIC = epic;
-        CustomRarity.LEGENDARY = legendary;
-        CustomRarity.MYTHIC = mythic;
+        CustomRarity.ONE = one;
+        CustomRarity.TWO = two;
+        CustomRarity.THREE = three;
+        CustomRarity.FOUR = four;
+        CustomRarity.FIVE = five;
+        CustomRarity.SIX = six;
+        CustomRarity.SEVEN = seven;
+        CustomRarity.EIGHT = eight;
+        CustomRarity.NINE = nine;
+        CustomRarity.TEN = ten;
 
-        rarities.add(common);
-        rarities.add(uncommon);
-        rarities.add(rare);
-        rarities.add(epic);
-        rarities.add(legendary);
-        rarities.add(mythic);
+        rarities.add(one);
+        rarities.add(two);
+        rarities.add(three);
+        rarities.add(four);
+        rarities.add(five);
+        rarities.add(six);
+        rarities.add(seven);
+        rarities.add(eight);
+        rarities.add(nine);
+        rarities.add(ten);
 
         field_8905 = rarities.toArray(new Rarity[0]);
     }

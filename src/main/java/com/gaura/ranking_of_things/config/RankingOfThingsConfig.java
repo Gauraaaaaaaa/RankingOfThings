@@ -5,28 +5,35 @@ import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
-import java.util.List;
-
 @Config(name = "ranking_of_things")
 @Config.Gui.Background("minecraft:textures/block/light_gray_wool.png")
 public class RankingOfThingsConfig implements ConfigData {
 
-    @ConfigEntry.Category("common")
+    @ConfigEntry.Category("one")
+    @ConfigEntry.Gui.RequiresRestart
+    public String one_name = "common";
+
+    @ConfigEntry.Category("one")
     @ConfigEntry.Gui.RequiresRestart
     @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
-    public FormattingColorName common_color = FormattingColorName.WHITE;
+    public FormattingColorName one_color = FormattingColorName.WHITE;
 
-    @ConfigEntry.Category("common")
+    @ConfigEntry.Category("one")
     @Comment("If items with enchantments should have their rarity upgraded by one level.")
     public boolean enchantment_rarity = true;
 
-    @ConfigEntry.Category("uncommon")
+
+    @ConfigEntry.Category("two")
+    @ConfigEntry.Gui.RequiresRestart
+    public String two_name = "uncommon";
+
+    @ConfigEntry.Category("two")
     @ConfigEntry.Gui.RequiresRestart
     @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
-    public FormattingColorName uncommon_color = FormattingColorName.GREEN;
+    public FormattingColorName two_color = FormattingColorName.GREEN;
 
-    @ConfigEntry.Category("uncommon")
-    public String[] uncommon_list = {"minecraft:potion", "minecraft:splash_potion", "minecraft:lingering_potion",
+    @ConfigEntry.Category("two")
+    public String[] two_list = {"minecraft:potion", "minecraft:splash_potion", "minecraft:lingering_potion",
             "minecraft:tipped_arrow", "minecraft:iron_ingot", "minecraft:raw_iron", "minecraft:iron_sword", "minecraft:iron_axe",
             "minecraft:iron_pickaxe", "minecraft:iron_shovel", "minecraft:iron_hoe", "minecraft:iron_nugget", "minecraft:iron_helmet",
             "minecraft:iron_chestplate", "minecraft:iron_leggings", "minecraft:iron_boots", "minecraft:iron_ore", "minecraft:deepslate_iron_ore",
@@ -44,13 +51,17 @@ public class RankingOfThingsConfig implements ConfigData {
             "minecraft:scute"};
 
 
-    @ConfigEntry.Category("rare")
+    @ConfigEntry.Category("three")
+    @ConfigEntry.Gui.RequiresRestart
+    public String three_name = "rare";
+
+    @ConfigEntry.Category("three")
     @ConfigEntry.Gui.RequiresRestart
     @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
-    public FormattingColorName rare_color = FormattingColorName.AQUA;
+    public FormattingColorName three_color = FormattingColorName.AQUA;
 
-    @ConfigEntry.Category("rare")
-    public String[] rare_list = {"minecraft:spectral_arrow", "minecraft:diamond", "minecraft:diamond_sword", "minecraft:diamond_axe",
+    @ConfigEntry.Category("three")
+    public String[] three_list = {"minecraft:spectral_arrow", "minecraft:diamond", "minecraft:diamond_sword", "minecraft:diamond_axe",
             "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate",
             "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:diamond_ore", "minecraft:deepslate_diamond_ore", "minecraft:diamond_block",
             "minecraft:diamond_horse_armor", "minecraft:enchanted_book", "minecraft:enchanting_table", "minecraft:turtle_helmet", "minecraft:trident",
@@ -71,13 +82,17 @@ public class RankingOfThingsConfig implements ConfigData {
             "minecraft:snort_pottery_sherd", "minecraft:sniffer_egg"};
 
 
-    @ConfigEntry.Category("epic")
+    @ConfigEntry.Category("four")
+    @ConfigEntry.Gui.RequiresRestart
+    public String four_name = "epic";
+
+    @ConfigEntry.Category("four")
     @ConfigEntry.Gui.RequiresRestart
     @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
-    public FormattingColorName epic_color = FormattingColorName.LIGHT_PURPLE;
+    public FormattingColorName four_color = FormattingColorName.LIGHT_PURPLE;
 
-    @ConfigEntry.Category("epic")
-    public String[] epic_list = {"minecraft:netherite_ingot", "minecraft:netherite_sword", "minecraft:netherite_axe",
+    @ConfigEntry.Category("four")
+    public String[] four_list = {"minecraft:netherite_ingot", "minecraft:netherite_sword", "minecraft:netherite_axe",
             "minecraft:netherite_pickaxe", "minecraft:netherite_shovel", "minecraft:netherite_hoe", "minecraft:netherite_helmet",
             "minecraft:netherite_chestplate", "minecraft:netherite_leggings", "minecraft:netherite_boots", "minecraft:ancient_debris",
             "minecraft:netherite_scrap", "minecraft:netherite_upgrade_smithing_template", "minecraft:elytra", "minecraft:heart_of_the_sea",
@@ -87,13 +102,17 @@ public class RankingOfThingsConfig implements ConfigData {
             "minecraft:skull_banner_pattern", "minecraft:dragon_breath"};
 
 
-    @ConfigEntry.Category("legendary")
+    @ConfigEntry.Category("five")
+    @ConfigEntry.Gui.RequiresRestart
+    public String five_name = "legendary";
+
+    @ConfigEntry.Category("five")
     @ConfigEntry.Gui.RequiresRestart
     @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
-    public FormattingColorName legendary_color = FormattingColorName.YELLOW;
+    public FormattingColorName five_color = FormattingColorName.YELLOW;
 
-    @ConfigEntry.Category("legendary")
-    public String[] legendary_list = {"minecraft:enchanted_golden_apple", "minecraft:sentry_armor_trim_smithing_template",
+    @ConfigEntry.Category("five")
+    public String[] five_list = {"minecraft:enchanted_golden_apple", "minecraft:sentry_armor_trim_smithing_template",
             "minecraft:shaper_armor_trim_smithing_template", "minecraft:silence_armor_trim_smithing_template", "minecraft:snout_armor_trim_smithing_template",
             "minecraft:spire_armor_trim_smithing_template", "minecraft:coast_armor_trim_smithing_template", "minecraft:eye_armor_trim_smithing_template",
             "minecraft:dune_armor_trim_smithing_template", "minecraft:host_armor_trim_smithing_template", "minecraft:raiser_armor_trim_smithing_template",
@@ -102,11 +121,67 @@ public class RankingOfThingsConfig implements ConfigData {
             "minecraft:dragon_egg", "minecraft:nether_star", "minecraft:totem_of_undying", "minecraft:conduit", "minecraft:beacon", "minecraft:mojang_banner_pattern"};
 
 
-    @ConfigEntry.Category("mythic")
+    @ConfigEntry.Category("six")
+    @ConfigEntry.Gui.RequiresRestart
+    public String six_name = "mythic";
+
+    @ConfigEntry.Category("six")
     @ConfigEntry.Gui.RequiresRestart
     @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
-    public FormattingColorName mythic_color = FormattingColorName.GOLD;
+    public FormattingColorName six_color = FormattingColorName.GOLD;
 
-    @ConfigEntry.Category("mythic")
-    public String[] mythic_list = {};
+    @ConfigEntry.Category("six")
+    public String[] six_list = {};
+
+
+    @ConfigEntry.Category("seven")
+    @ConfigEntry.Gui.RequiresRestart
+    public String seven_name = "none";
+
+    @ConfigEntry.Category("seven")
+    @ConfigEntry.Gui.RequiresRestart
+    @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
+    public FormattingColorName seven_color = FormattingColorName.GRAY;
+
+    @ConfigEntry.Category("seven")
+    public String[] seven_list = {};
+
+
+    @ConfigEntry.Category("eight")
+    @ConfigEntry.Gui.RequiresRestart
+    public String eight_name = "none";
+
+    @ConfigEntry.Category("eight")
+    @ConfigEntry.Gui.RequiresRestart
+    @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
+    public FormattingColorName eight_color = FormattingColorName.GRAY;
+
+    @ConfigEntry.Category("eight")
+    public String[] eight_list = {};
+
+
+    @ConfigEntry.Category("nine")
+    @ConfigEntry.Gui.RequiresRestart
+    public String nine_name = "none";
+
+    @ConfigEntry.Category("nine")
+    @ConfigEntry.Gui.RequiresRestart
+    @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
+    public FormattingColorName nine_color = FormattingColorName.GRAY;
+
+    @ConfigEntry.Category("nine")
+    public String[] nine_list = {};
+
+
+    @ConfigEntry.Category("ten")
+    @ConfigEntry.Gui.RequiresRestart
+    public String ten_name = "none";
+
+    @ConfigEntry.Category("ten")
+    @ConfigEntry.Gui.RequiresRestart
+    @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
+    public FormattingColorName ten_color = FormattingColorName.GRAY;
+
+    @ConfigEntry.Category("ten")
+    public String[] ten_list = {};
 }
