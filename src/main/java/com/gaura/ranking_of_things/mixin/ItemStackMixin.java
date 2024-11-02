@@ -2,21 +2,15 @@ package com.gaura.ranking_of_things.mixin;
 
 import com.gaura.ranking_of_things.CustomRarity;
 import com.gaura.ranking_of_things.RankingOfThings;
-import net.minecraft.component.ComponentHolder;
-import net.minecraft.component.DataComponentTypes;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
-import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
-import java.util.List;
 
 @Mixin(ItemStack.class)
 public class ItemStackMixin {
@@ -26,42 +20,61 @@ public class ItemStackMixin {
 
         ItemStack stack = (ItemStack) (Object) this;
 
-        if (isItemInList(stack, RankingOfThings.CONFIG.uncommon_list)) {
+        if (isItemInList(stack, RankingOfThings.CONFIG.two_list)) {
 
-            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.RARE : CustomRarity.UNCOMMON);
+            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.THREE : CustomRarity.TWO);
         }
-        else if (isItemInList(stack, RankingOfThings.CONFIG.rare_list)) {
+        else if (isItemInList(stack, RankingOfThings.CONFIG.three_list)) {
 
-            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.EPIC : CustomRarity.RARE);
+            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.FOUR : CustomRarity.THREE);
         }
-        else if (isItemInList(stack, RankingOfThings.CONFIG.epic_list)) {
+        else if (isItemInList(stack, RankingOfThings.CONFIG.four_list)) {
 
-            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.LEGENDARY : CustomRarity.EPIC);
+            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.FIVE : CustomRarity.FOUR);
         }
-        else if (isItemInList(stack, RankingOfThings.CONFIG.legendary_list)) {
+        else if (isItemInList(stack, RankingOfThings.CONFIG.five_list)) {
 
-            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.MYTHIC : CustomRarity.LEGENDARY);
+            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.SIX : CustomRarity.FIVE);
         }
-        else if (isItemInList(stack, RankingOfThings.CONFIG.mythic_list)) {
+        else if (isItemInList(stack, RankingOfThings.CONFIG.six_list)) {
 
-            cir.setReturnValue(CustomRarity.MYTHIC);
+            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.SEVEN : CustomRarity.SIX);
+        }
+        else if (isItemInList(stack, RankingOfThings.CONFIG.seven_list)) {
+
+            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.EIGHT : CustomRarity.SEVEN);
+        }
+        else if (isItemInList(stack, RankingOfThings.CONFIG.eight_list)) {
+
+            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.NINE : CustomRarity.EIGHT);
+        }
+        else if (isItemInList(stack, RankingOfThings.CONFIG.nine_list)) {
+
+            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.TEN : CustomRarity.NINE);
+        }
+        else if (isItemInList(stack, RankingOfThings.CONFIG.ten_list)) {
+
+            cir.setReturnValue(CustomRarity.TEN);
         }
         else {
 
-            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.UNCOMMON : CustomRarity.COMMON);
+            cir.setReturnValue((stack.hasEnchantments() && RankingOfThings.CONFIG.enchantment_rarity) ? CustomRarity.TWO : CustomRarity.ONE);
         }
     }
 
     @Unique
     private boolean isItemInList(ItemStack stack, String[] list) {
 
-        for (String string : list) {
+        if (list != null) {
 
-            if (!string.isEmpty()) {
+            for (String string : list) {
 
-                if (stack.getItem() == Registries.ITEM.get(Identifier.of(string))) {
+                if (!string.isEmpty()) {
 
-                    return true;
+                    if (stack.getItem() == Registries.ITEM.get(Identifier.of(string))) {
+
+                        return true;
+                    }
                 }
             }
         }

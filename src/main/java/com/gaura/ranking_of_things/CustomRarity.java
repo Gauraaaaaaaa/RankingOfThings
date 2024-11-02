@@ -9,10 +9,14 @@ public class CustomRarity {
         Rarity.values();
     }
 
-    public static Rarity COMMON;
-    public static Rarity UNCOMMON;
-    public static Rarity RARE;
-    public static Rarity EPIC;
-    public static Rarity LEGENDARY;
-    public static Rarity MYTHIC;
+    public static Rarity ONE;
+    public static Rarity TWO;
+    public static Rarity THREE;
+    public static Rarity FOUR;
+    public static Rarity FIVE;
+    public static Rarity SIX;
+    public static Rarity SEVEN;
+    public static Rarity EIGHT;
+    public static Rarity NINE;
+    public static Rarity TEN;
 }

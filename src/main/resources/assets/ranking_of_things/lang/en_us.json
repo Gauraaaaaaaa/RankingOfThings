@@ -1,27 +1,53 @@
 {
   "text.autoconfig.ranking_of_things.title": "Ranking Of Things",
 
-  "text.autoconfig.ranking_of_things.category.common": "Common",
-  "text.autoconfig.ranking_of_things.option.common_color": "Common Color",
+  "text.autoconfig.ranking_of_things.category.one": "One",
+  "text.autoconfig.ranking_of_things.option.one_name": "One Name",
+  "text.autoconfig.ranking_of_things.option.one_color": "One Color",
   "text.autoconfig.ranking_of_things.option.enchantment_rarity": "Enchantment Rarity",
 
-  "text.autoconfig.ranking_of_things.category.uncommon": "Uncommon",
-  "text.autoconfig.ranking_of_things.option.uncommon_color": "Uncommon Color",
-  "text.autoconfig.ranking_of_things.option.uncommon_list": "Uncommon List",
+  "text.autoconfig.ranking_of_things.category.two": "Two",
+  "text.autoconfig.ranking_of_things.option.two_name": "Two Name",
+  "text.autoconfig.ranking_of_things.option.two_color": "Two Color",
+  "text.autoconfig.ranking_of_things.option.two_list": "Two List",
 
-  "text.autoconfig.ranking_of_things.category.rare": "Rare",
-  "text.autoconfig.ranking_of_things.option.rare_color": "Rare Color",
-  "text.autoconfig.ranking_of_things.option.rare_list": "Rare List",
+  "text.autoconfig.ranking_of_things.category.three": "Three",
+  "text.autoconfig.ranking_of_things.option.three_name": "Three Name",
+  "text.autoconfig.ranking_of_things.option.three_color": "Three Color",
+  "text.autoconfig.ranking_of_things.option.three_list": "Three List",
 
-  "text.autoconfig.ranking_of_things.category.epic": "Epic",
-  "text.autoconfig.ranking_of_things.option.epic_color": "Epic Color",
-  "text.autoconfig.ranking_of_things.option.epic_list": "Epic List",
+  "text.autoconfig.ranking_of_things.category.four": "Four",
+  "text.autoconfig.ranking_of_things.option.four_name": "Four Name",
+  "text.autoconfig.ranking_of_things.option.four_color": "Four Color",
+  "text.autoconfig.ranking_of_things.option.four_list": "Four List",
 
-  "text.autoconfig.ranking_of_things.category.legendary": "Legendary",
-  "text.autoconfig.ranking_of_things.option.legendary_color": "Legendary Color",
-  "text.autoconfig.ranking_of_things.option.legendary_list": "Legendary List",
+  "text.autoconfig.ranking_of_things.category.five": "Five",
+  "text.autoconfig.ranking_of_things.option.five_name": "Five Name",
+  "text.autoconfig.ranking_of_things.option.five_color": "Five Color",
+  "text.autoconfig.ranking_of_things.option.five_list": "Five List",
 
-  "text.autoconfig.ranking_of_things.category.mythic": "Mythic",
-  "text.autoconfig.ranking_of_things.option.mythic_color": "Mythic Color",
-  "text.autoconfig.ranking_of_things.option.mythic_list": "Mythic List"
+  "text.autoconfig.ranking_of_things.category.six": "Six",
+  "text.autoconfig.ranking_of_things.option.six_name": "Six Name",
+  "text.autoconfig.ranking_of_things.option.six_color": "Six Color",
+  "text.autoconfig.ranking_of_things.option.six_list": "Six List",
+
+  "text.autoconfig.ranking_of_things.category.seven": "Seven",
+  "text.autoconfig.ranking_of_things.option.seven_name": "Seven Name",
+  "text.autoconfig.ranking_of_things.option.seven_color": "Seven Color",
+  "text.autoconfig.ranking_of_things.option.seven_list": "Seven List",
+
+  "text.autoconfig.ranking_of_things.category.eight": "Eight",
+  "text.autoconfig.ranking_of_things.option.eight_name": "Eight Name",
+  "text.autoconfig.ranking_of_things.option.eight_color": "Eight Color",
+  "text.autoconfig.ranking_of_things.option.eight_list": "Eight List",
+
+  "text.autoconfig.ranking_of_things.category.nine": "Nine",
+  "text.autoconfig.ranking_of_things.option.nine_name": "Nine Name",
+  "text.autoconfig.ranking_of_things.option.nine_color": "Nine Color",
+  "text.autoconfig.ranking_of_things.option.nine_list": "Nine List",
+
+  "text.autoconfig.ranking_of_things.category.ten": "Ten",
+  "text.autoconfig.ranking_of_things.option.ten_name": "Ten Name",
+  "text.autoconfig.ranking_of_things.option.ten_color": "Ten Color",
+  "text.autoconfig.ranking_of_things.option.ten_list": "Ten List"
 }
