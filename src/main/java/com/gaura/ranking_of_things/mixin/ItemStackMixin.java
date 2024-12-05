@@ -2,6 +2,7 @@ package com.gaura.ranking_of_things.mixin;
 
 import com.gaura.ranking_of_things.CustomRarity;
 import com.gaura.ranking_of_things.RankingOfThings;
+import com.gaura.ranking_of_things.config.RarityTooltip;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Rarity;
@@ -44,16 +45,16 @@ public class ItemStackMixin {
             Rarity rarity = stack.getRarity();
             Text rarityText;
 
-            if (RankingOfThings.CONFIG.show_rarity_tooltip_star) {
+            if (RankingOfThings.CONFIG.choose_rarity_tooltip_display == RarityTooltip.STARS) {
 
                 rarityText = Text.literal("⭐".repeat(rarityLevelMap.getOrDefault(rarity, 0))).formatted(rarity.formatting);
+                tooltip.add(1, rarityText);
             }
-            else {
+            else if (RankingOfThings.CONFIG.choose_rarity_tooltip_display == RarityTooltip.NAME) {
 
                 rarityText = Text.literal(rarity.toString()).formatted(rarity.formatting);
+                tooltip.add(1, rarityText);
             }
-
-            tooltip.add(1, rarityText);
         }
     }
 }

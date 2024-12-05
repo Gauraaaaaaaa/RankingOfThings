@@ -24,11 +24,11 @@ public class RankingOfThingsConfig implements ConfigData {
 
     @ConfigEntry.Category("one")
     @Comment("If the rarity should be shown in the tooltip.")
-    public boolean show_rarity_tooltip = false;
-
+    public boolean show_rarity_tooltip = true;
     @ConfigEntry.Category("one")
-    @Comment("If the rarity should be shown as a star(s) in the tooltip.")
-    public boolean show_rarity_tooltip_star = true;
+    @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
+    @Comment("If 'Show Rarity Tooltip' is true, choose between showing the rarity as the name or as stars.")
+    public RarityTooltip choose_rarity_tooltip_display = RarityTooltip.NAME;
 
 
     @ConfigEntry.Category("two")

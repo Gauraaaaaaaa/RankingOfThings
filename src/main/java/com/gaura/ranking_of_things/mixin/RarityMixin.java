@@ -48,16 +48,16 @@ public abstract class RarityMixin {
         var rarities = new ArrayList<>(Arrays.asList(field_8905));
         var last = rarities.get(rarities.size() - 1);
 
-        var one = newRarity(RankingOfThings.CONFIG.one_name.toUpperCase(), last.ordinal() + 1, RankingOfThings.CONFIG.one_color.getFormatting());
-        var two = newRarity(RankingOfThings.CONFIG.two_name.toUpperCase(), last.ordinal() + 2, RankingOfThings.CONFIG.two_color.getFormatting());
-        var three = newRarity(RankingOfThings.CONFIG.three_name.toUpperCase(), last.ordinal() + 3, RankingOfThings.CONFIG.three_color.getFormatting());
-        var four = newRarity(RankingOfThings.CONFIG.four_name.toUpperCase(), last.ordinal() + 4, RankingOfThings.CONFIG.four_color.getFormatting());
-        var five = newRarity(RankingOfThings.CONFIG.five_name.toUpperCase(), last.ordinal() + 5, RankingOfThings.CONFIG.five_color.getFormatting());
-        var six = newRarity(RankingOfThings.CONFIG.six_name.toUpperCase(), last.ordinal() + 6, RankingOfThings.CONFIG.six_color.getFormatting());
-        var seven = newRarity(RankingOfThings.CONFIG.seven_name.toUpperCase(), last.ordinal() + 7, RankingOfThings.CONFIG.seven_color.getFormatting());
-        var eight = newRarity(RankingOfThings.CONFIG.eight_name.toUpperCase(), last.ordinal() + 8, RankingOfThings.CONFIG.eight_color.getFormatting());
-        var nine = newRarity(RankingOfThings.CONFIG.nine_name.toUpperCase(), last.ordinal() + 9, RankingOfThings.CONFIG.nine_color.getFormatting());
-        var ten = newRarity(RankingOfThings.CONFIG.ten_name.toUpperCase(), last.ordinal() + 10, RankingOfThings.CONFIG.ten_color.getFormatting());
+        var one = newRarity(RankingOfThings.CONFIG.one_name, last.ordinal() + 1, RankingOfThings.CONFIG.one_color.getFormatting());
+        var two = newRarity(RankingOfThings.CONFIG.two_name, last.ordinal() + 2, RankingOfThings.CONFIG.two_color.getFormatting());
+        var three = newRarity(RankingOfThings.CONFIG.three_name, last.ordinal() + 3, RankingOfThings.CONFIG.three_color.getFormatting());
+        var four = newRarity(RankingOfThings.CONFIG.four_name, last.ordinal() + 4, RankingOfThings.CONFIG.four_color.getFormatting());
+        var five = newRarity(RankingOfThings.CONFIG.five_name, last.ordinal() + 5, RankingOfThings.CONFIG.five_color.getFormatting());
+        var six = newRarity(RankingOfThings.CONFIG.six_name, last.ordinal() + 6, RankingOfThings.CONFIG.six_color.getFormatting());
+        var seven = newRarity(RankingOfThings.CONFIG.seven_name, last.ordinal() + 7, RankingOfThings.CONFIG.seven_color.getFormatting());
+        var eight = newRarity(RankingOfThings.CONFIG.eight_name, last.ordinal() + 8, RankingOfThings.CONFIG.eight_color.getFormatting());
+        var nine = newRarity(RankingOfThings.CONFIG.nine_name, last.ordinal() + 9, RankingOfThings.CONFIG.nine_color.getFormatting());
+        var ten = newRarity(RankingOfThings.CONFIG.ten_name, last.ordinal() + 10, RankingOfThings.CONFIG.ten_color.getFormatting());
 
         CustomRarity.ONE = one;
         CustomRarity.TWO = two;
