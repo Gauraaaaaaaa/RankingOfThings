@@ -22,6 +22,14 @@ public class RankingOfThingsConfig implements ConfigData {
     @Comment("If items with enchantments should have their rarity upgraded by one level.")
     public boolean enchantment_rarity = true;
 
+    @ConfigEntry.Category("one")
+    @Comment("If the rarity should be shown in the tooltip.")
+    public boolean show_rarity_tooltip = false;
+
+    @ConfigEntry.Category("one")
+    @Comment("If the rarity should be shown as a star(s) in the tooltip.")
+    public boolean show_rarity_tooltip_star = true;
+
 
     @ConfigEntry.Category("two")
     @ConfigEntry.Gui.RequiresRestart

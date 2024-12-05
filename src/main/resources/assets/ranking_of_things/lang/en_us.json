@@ -5,6 +5,8 @@
   "text.autoconfig.ranking_of_things.option.one_name": "One Name",
   "text.autoconfig.ranking_of_things.option.one_color": "One Color",
   "text.autoconfig.ranking_of_things.option.enchantment_rarity": "Enchantment Rarity",
+  "text.autoconfig.ranking_of_things.option.show_rarity_tooltip": "Show Rarity Tooltip",
+  "text.autoconfig.ranking_of_things.option.show_rarity_tooltip_star": "Show Rarity Tooltip Star(s)",
 
   "text.autoconfig.ranking_of_things.category.two": "Two",
   "text.autoconfig.ranking_of_things.option.two_name": "Two Name",
